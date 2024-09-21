@@ -3,11 +3,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: small;
+    font-size: 9pt;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 .resume {
@@ -17,20 +17,20 @@ body {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+
 }
 
 .left-column {
-    width: 30%;
+    flex: 0.3;
     background-color: #f8f9fa;
-    padding: 30px;
+    padding: 40px;
 
 }
 
 .right-column {
-    width: 70%;
-    padding: 30px;
-
-
+    /* width: auto; */
+    flex: 0.7;
+    padding: 40px;
 }
 
 .header {
@@ -47,6 +47,7 @@ body {
     margin: 0 auto 20px;
     display: block;
     border: #ffffff solid 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -84,14 +85,10 @@ h2 {
     margin: 5px 0;
 }
 
-.contact-info p ::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f00c";
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    font-weight: 900;
+.contact-info i {
+    width: 20px;
 }
+
 
 ul {
     padding-left: 20px;
@@ -125,4 +122,11 @@ li {
 
 .icon {
     width: 10px;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
 }
