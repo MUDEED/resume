@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9pt;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.resume {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+
+}
+
+.left-column {
+    display: flex;
+    flex-direction:column;
+    flex: 0.3;
+    background-color: #d3f2dc;
+    padding: 40px;
+
+}
+
+.right-column {
+    display: flex;
+    flex-direction:column;
+    flex: 0.7;
+    padding: 40px;
+}
+
+.header {
+    height: 25%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    background-image: url("images/profile_photo.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto ;
+    margin-top: 30px ;
+    display: block;
+    border: #ffffff solid 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #003049;
+    margin: 0;
+    font-size: 24px;
+}
+
+.profile-name {
+    font-size: 40px;
+
+}
+
+h2 {
+    font-family: 'Barlow', sans-serif;
+    color: #184e77;
+    border-bottom: 2px solid #184e77;
+    padding-bottom: 5px;
+    margin-top: 20px;
+
+}
+
+.job-title {
+    font-size: large;
+    color: #51595f;
+    margin-top: 5px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info i {
+    color: #184e77;
+    width: 20px;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.work-experience {
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+
+
+.exp-work-title {
+    display: flex;
+    margin-bottom: -20px;
+}
+
+.work-date {
+    flex: 1;
+    color: #6c757d;
+    text-align: right;
+
+}
+
+
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
