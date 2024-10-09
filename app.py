@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def display_resume():
     data_dict = {
-        "job_title": "Python Developer",
+        "job_title": "Backend Developer",
         "skills": [
             "Python",
             "PySide/PyQt",
@@ -15,9 +15,11 @@ def display_resume():
             "SQLAlchemy",
             "HTML/CSS",
             "JavaScript",
+            "C#",
             "JSON",
             "Git - GitHub/GitLab",
             "Linux - bash/tcsh",
+            "Postman",
         ],
         "languages": ["Thai", "English"],
         "educations": {
